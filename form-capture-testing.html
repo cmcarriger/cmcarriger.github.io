@@ -5,22 +5,36 @@
   </style>
 </head>
 <body>
-Test form capture for 106471 - test 1
- <form method="post" action="http://analytics-eu.clickdimensions.com/forms/h/aQjmpqgfhoUicsFb2lW8dl"> 
+form capture test - 115211
+ <code>
+	<form action="https://analytics.clickdimensions.com/forms/h/aEK0JP7ME0ecwgASqgHFg" method="post">
+  		First name:<br>
+  		<input type="text" name="001" value="Enter First Name">
+  		<br><br>
+  		Last name:<br>
+  		<input type="text" name="002" value="Enter Last Name">
+  		<br><br>
+		Email:<br>
+  		<input type="email" name="008" value="Enter Email Id">
+  		<br><br>
+  		Company:<br>
+  		<input type="text" name="004" value="Enter Company Name">
+      <br><br>
+      Attending:<br>
+      <input type="radio" name="010" value="yes" checked> Yes<br>
+      <input type="radio" name="010" value="no"> No<br>
+  		<br><br>
+  		<input type="submit" value="Submit">
 
-<input type="email" placeholder="email" name="email"><br><br>
- <input type="text" placeholder="text" name="11" required>
-   
-<input type="submit" value="Submit">
-
-</form>
+	</form>
+</code> 
 
 
-<script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js" > </script> 
+<script type="text/javascript" src="https://analytics.clickdimensions.com/ts.js"> </script> 
 
 <script type="text/javascript"> 
-  var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com'); 
-  cdAnalytics.setAccountKey('azbiYiQqPE2Xc4O8pWeldA'); 
+  var cdAnalytics = new clickdimensions.Analytics('analytics.clickdimensions.com'); 
+  cdAnalytics.setAccountKey('aFnjoLHdP3Uy1FZCnEGa2E'); 
   cdAnalytics.setDomain('cmcarriger.github.io'); 
   cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore)); 
   cdAnalytics.trackPage(); 
