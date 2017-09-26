@@ -1,6 +1,6 @@
 @charset "utf-8"
 html{
-background: rgba(233, 234, 238, 0.9);
+background: #ddd;
 margin: auto;
 }
  body {
@@ -8,7 +8,7 @@ margin: auto;
    font-size: 14px;
    font-weight: normal;
   margin: 1%;
-  padding: 5%;
+  width: 98%;
          }
          
   h1 {
@@ -21,5 +21,5 @@ margin: auto;
  font-size: 19px;
  background-color: #000;
  color: #fff;
- padding: 3%;
+ padding: .3em;
          } 
