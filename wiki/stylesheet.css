@@ -1,19 +1,29 @@
 @charset "utf-8"
-html{
+
+ html{
 background: #ddd;
-margin: auto;
+margin: 1% 0;
 }
+
  body {
    font-family: 'Rubik', sans-serif;
    font-size: 14px;
    font-weight: normal;
-  margin: 1%;
-  width: 98%;
+  margin: auto;
+  width: 95%;
+  padding: 1%;
+  max-width: 1000px;
          }
-         
+  img {
+display: block;
+margin: auto;
+width: 100%;
+max-width: 600px;
+}
+
   h1 {
  font-family: 'Maitree', serif;
- font-size: 22px;
+ font-size: 1.1em;
          }
              
    h2 {
