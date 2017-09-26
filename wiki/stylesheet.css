@@ -1,7 +1,7 @@
 @charset "utf-8"
 
  html{
-background: #ddd;
+background-color: #ddd;
 margin: 1% 0;
 }
 
@@ -12,9 +12,9 @@ margin: 1% 0;
   margin: auto;
   width: 95%;
   padding: 1%;
-  max-width: 1000px;
-         }
-  img {
+           }
+  
+img {
 display: block;
 margin: auto;
 width: 100%;
