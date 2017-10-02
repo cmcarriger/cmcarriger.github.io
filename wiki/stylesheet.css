@@ -18,12 +18,10 @@ max-width: 600px;
 
   h1 {
  font-family: 'Maitree', serif;
- font-size: 1.4em;
-   background-color: #000;
-   color: #fff;
+ font-size: 1.6em;
    text-align: center;
    padding: 1%;
-  margin-top: 7%;
+  margin-top: 1%;
          }
              
    h2 {
