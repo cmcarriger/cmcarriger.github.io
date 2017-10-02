@@ -41,7 +41,7 @@ h3 {
  font-size: 1.15em;
  padding: none;
          } 
-li {
+.list-group-item li {
  list-style-type: decimal;
  border: 1px solid #888;
  border-radius: 50%;
