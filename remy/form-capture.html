@@ -5,10 +5,39 @@
 </head>
 
 <body>
+	<p>testing for ticket 125207 - test 1 w/ code copied directly from their site, including TS, and their own captcha</p>
 	<!--- form capture code can go here -->
+	 <form id="report-form" action="http://analytics-eu.clickdimensions.com/forms/h/aTLBIxbsfgkSQVRrb0bKfZ" method="post" name="claves-inversion">
+      
+        <div class="input">
+            <input type="text" id="contact-name" name="firstname" placeholder="Nombre y apellidos" />
+        </div>
+        <div class="input">
+            <input type="email" id="contact-email" name="email" placeholder="Email" />
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="terms" id="terms" />
+            <span class="check"></span>
+            <label for="terms">Acepto los <a id="terms-and-conditions" href="#">términos y condiciones</a></label>
+        </div>
+        <!-- TODO: Cambiar la key del captcha por la de ellos -->
+        <div class="g-recaptcha" data-sitekey="6LfQxhgUAAAAANiYF1n0wDdsrviQyf0KCAKRe-e1"></div>
+        <div class="submit">
+            <input type="hidden" name="bContact" value="B" />
+            <input id="submit-button" type="submit" value="Enviar" />
+        </div>
+    </form>
 	
   <!-- place customer's tracking script below and include the domain cmcarriger.github.io in the setDomain line--> 
   
+<script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js" > </script> 
 
+    <script type="text/javascript"> 
+      var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com'); 
+      cdAnalytics.setAccountKey('atDRUKnvd10mBkBjYEjiJe'); 
+      cdAnalytics.setDomain('cmcarriger.github.io'); 
+      cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore)); 
+      cdAnalytics.trackPage(); 
+    </script> 
 	</body>
 </html>
