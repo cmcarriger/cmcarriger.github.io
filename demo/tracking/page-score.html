@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Tomato Gardens - Page Score</title>
+</head>
+<body>
+This is a sample page
+
+
+<!-- page view scoring script -->
+
+<script type="text/javascript"> 
+  var cdScore = 50; 
+</script>
+
+<!-- Tomato Gardens tracking script -->
+
+<script type="text/javascript" src="https://analytics.clickdimensions.com/ts.js" > </script> 
+
+<script type="text/javascript"> 
+  var cdAnalytics = new clickdimensions.Analytics('analytics.clickdimensions.com'); 
+  cdAnalytics.setAccountKey('as6rWsSI93EGPnVVtKlQ59'); 
+  cdAnalytics.setDomain('cmcarriger.github.io'); 
+  cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore)); 
+  cdAnalytics.trackPage(); 
+</script> 
+</body>
+</html>
