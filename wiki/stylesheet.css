@@ -20,6 +20,10 @@ width: 100%;
 max-width: 600px;
 }
 
+input {
+ line-height: none !important;
+}
+
   h1 {
  font-family: Roboto-Medium;
    font-size: 30px;
