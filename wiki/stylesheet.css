@@ -5,8 +5,8 @@
   font-family: Roboto-Regular;
   font-size: 16px;
   color: #617082;
-  line-height: 30px;
-   /*font-size: 14px;
+  /*line-height: 30px;
+   font-size: 14px;
    font-weight: normal;
   padding: 1%;
   margin: 1% 0;
@@ -20,9 +20,9 @@ width: 100%;
 max-width: 600px;
 }
 
-input {
+/*input {
  line-height: none !important;
-}
+} */
 
   h1 {
  font-family: Roboto-Medium;
