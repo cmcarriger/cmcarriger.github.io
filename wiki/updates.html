@@ -53,31 +53,56 @@
   
   <div class="col-sm-8" style="padding: 1%; margin-left: 5px;">
    <h1>Wiki Updates - March 2018</h1>
- <div class="card">
+   
+   <div class="card">
   <div class="card-header">
-   <h2><img src="http://clickdimensions.com/files/2018/01/All-Feature-Icons_Email-Marketing.png" style="display: inline-block; max-width: 25px; vertical-align: top;"> Email Marketing &amp; Subscription Management</h2>
+   <h2><!--<img src="http://clickdimensions.com/files/2018/01/All-Feature-Icons_Email-Marketing.png" style="display: inline-block; max-width: 25px; vertical-align: top;">-->Handling Account Suspensions</h2>
   </div>
   <div class="card-body">
   <!--<h3 class="card-title">option title here</h3>-->
-   <p class="card-text">The <strong>Duplicate Contacts/Leads</strong> section further details how duplicate contacts/leads and their submitted unsubscribes will be handled. In that area of the page we do have additional information on other scenarios regarding unsubscribes, but if you see that a particular scenario hasn't been addressed, please let the team know in <a href="https://cdcustomerteam.slack.com/messages/C6JHEUKDX" target="_blank">wiki_discussion</a>.</p>
+   <p class="card-text">We now have more information on what happens when an account is suspended.</p>
    <!--<img src="https://content.screencast.com/users/carolynn.carrige/folders/Snagit/media/8ee07f67-5871-4ce6-8dc1-2631be272442/11.07.2017-14.32.png" style="width: 100%; max-width: 600px;">-->
-  <a href="https://wiki.clickdimensionsdev.com/index.php/Subscription_Management#Duplicate_Contacts.2FLeads" class="card-link btn btn-outline-primary" target="_blank" style="position: absolute; right: 15px;">Read more&nbsp;<i class="fa fa-angle-right"></i>&nbsp;</a>
+  <a href="https://wiki.clickdimensionsdev.com/index.php/Suspension_Mechanism#Handling_Exceptions_From_CRM_SDK" class="card-link btn btn-outline-primary" target="_blank" style="position: absolute; right: 15px;">Read more&nbsp;<i class="fa fa-angle-right"></i>&nbsp;</a>
   <br />
   <br />
   </div>
  </div>
- <br />
-  
+ <br /> 
+   
+   
+   <div class="card">
+  <div class="card-header">
+   <h2><img src="http://clickdimensions.com/files/2018/01/All-Feature-Icons_Campaign-Automation.png" style="display: inline-block; max-width: 25px; vertical-align: top;"> Campaign Automation</h2>
+  </div>
+  <div class="card-body">
+  <!--<h3 class="card-title">option title here</h3>-->
+  <!--<p class="card-text">Over the last couple months we have gotten information on specific behavior for decision nodes.</p>-->
+   <ul class="list-group list-group-flush">
+    <li class="list-group-items">The <a href="https://wiki.clickdimensionsdev.com/index.php/Campaign_Automation_Decision_Node#Default_Operator">default operator</a> for a CA decision node is <em>and</em>. In order to avoid a participant getting stuck in a decision node, customers should specify which operator they want to use.</li>
+    <li class="list-group-items"><a href="https://wiki.clickdimensionsdev.com/index.php/Campaign_Automation_Decision_Node#Leads_.26_Contacts_in_the_same_Node">Leads and contacts</a> going through the same node have to be addressed in separate condition statements in order for a participant to process correctly.</li>
+   <!--<img src="https://content.screencast.com/users/carolynn.carrige/folders/Snagit/media/8ee07f67-5871-4ce6-8dc1-2631be272442/11.07.2017-14.32.png" style="width: 100%; max-width: 600px;">-->
+    <li class="list-group-items">Emails sent from a Campaign Automation's Send Email action can add <a href="https://wiki.clickdimensionsdev.com/index.php/Send_Email_Action#Google_Analytics_UTM_Parameters">Google Analytics UTM parameters</a>. By default, a created Emails record will have the Add Google Analytics field set to yes, so the Send Email action simply needs to include a CRM campaign in order for the UTM parameters to be created and added to the email links.</li>
+         <li class="list-group-items">Dev has added the steps our plugin takes when to work with an <a href="https://wiki.clickdimensionsdev.com/index.php/Added_to_List_Trigger#Plugin_Processing">Added to List</a> trigger.</li>
+    <li class="list-group-items">When one <a href="https://wiki.clickdimensionsdev.com/index.php/Email_Interaction_Trigger#Multiple_Sends_in_One_Trigger">Email Interaction</a> trigger is checking multiple Emails for clicks/opens, by default the trigger will use <em>and</em> logic. If a customer wants to use <em>or</em> logic instead, they will have to set up parallel triggers to check the Emails individually for opens/clicks.</li>
+   </ul>
+  <br />
+  <br />
+  </div>
+ </div>
+   
+
+ 
+  <!--
    <div class="card">
   <div class="card-header">
    <h2><img src="http://clickdimensions.com/files/2018/01/All-Feature-Icons_Web-Forms.png" style="display: inline-block; max-width: 25px; vertical-align: top;"> Web Tracking &amp; Web Content</h2>
   </div>
-  <div class="card-body">
+  <div class="card-body"> -->
   <!--<h3 class="card-title">option title here</h3>-->
   <!-- <p class="card-text">The <strong>Duplicate Contacts/Leads</strong> section further details how duplicate contacts/leads and their submitted unsubscribes will be handled. That section is a sub-section that further details unsubscribe behavior, but if any scenarios are missing, please let the team know.</p>-->
    <!--<img src="https://content.screencast.com/users/carolynn.carrige/folders/Snagit/media/8ee07f67-5871-4ce6-8dc1-2631be272442/11.07.2017-14.32.png" style="width: 100%; max-width: 600px;">-->
   <!-- <a href="https://wiki.clickdimensionsdev.com/index.php/Subscription_Management#Duplicate_Contacts.2FLeads" class="card-link btn btn-outline-primary text-right" target="_blank">Read more <i class="fa fa-arrow-circle-right"></i></a>-->
-   <ul class="list-group list-group-flush">
+<!--   <ul class="list-group list-group-flush">
     <li class="list-group-item">When Posted Forms come in to an environment that has duplicate contacts/leads, the contact/lead that the Posted Form is associated with will depend on how the Form was accessed. Learn more about this <a href="https://wiki.clickdimensionsdev.com/index.php/Posted_Forms#Duplicate_Contacts.2FLeads" target="_blank">here</a>.</li>
     
   <li class="list-group-item">If a customer is looking to migrate web tracking records, such as Page Views or Visits, we have some helpful info  <a href="https://wiki.clickdimensionsdev.com/index.php/Web_Tracking#Associating_Page_Views_and_Page_Visits_with_a_Specific_Contact" target="_blank">here</a> on what can be done and the ramifications.</li> 
@@ -101,7 +126,7 @@
   
 </ul>
   </div>
- </div>
+ </div>-->
    
   </div><!-- closing the column -->
   
