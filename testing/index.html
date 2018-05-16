@@ -1,20 +1,7 @@
 
 <html>
   <head>
-  </head>
-  <body>
-    <p>Test page for display</p>
-    
-    <script type="text/javascript"> 
-  var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com'); 
-  cdAnalytics.setAccountKey('acP8vbk7mnUmxgTBl7vCkE'); 
-  cdAnalytics.setDomain('cmcarriger.github.io'); 
-  cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore)); 
-  var optOutHostId = 'cmcarrigergithubio_EkCv7lBTgxmUnm7kbv8Pca'; 
-  cdAnalytics.optOutTracking(true); 
-</script>
-    
-    <script type="text/javascript"> 
+        <script type="text/javascript"> 
  var optOutSettings = { 
     text: 'This is a test message to indicate that we track website visits here unless you' + 
      '<a href="#" id="stopTracking" style="color: #0b8be3">disable tracking</a>.', 
@@ -29,7 +16,23 @@
     okButttonWidth: 'auto', 
     daysToKeepTheAnswer: 183 
  }; 
-</script> 
+</script>
+    
+  </head>
+  
+  <body>
+    <p>Test page for display</p>
+    
+    <script type="text/javascript"> 
+  var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com'); 
+  cdAnalytics.setAccountKey('acP8vbk7mnUmxgTBl7vCkE'); 
+  cdAnalytics.setDomain('cmcarriger.github.io'); 
+  cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore)); 
+  var optOutHostId = 'cmcarrigergithubio_EkCv7lBTgxmUnm7kbv8Pca'; 
+  cdAnalytics.optOutTracking(true); 
+</script>
+    
+ 
     
   </body>
 </html>
