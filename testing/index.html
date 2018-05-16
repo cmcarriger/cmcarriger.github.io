@@ -3,8 +3,7 @@
   <head>
         <script type="text/javascript"> 
  var optOutSettings = { 
-    text: 'This is a test message to indicate that we track website visits here unless you' + 
-     '<a href="#" id="stopTracking" style="color: #0b8be3">disable tracking</a>.', 
+    text: 'This is a test message to indicate that we track website visits here unless you <a href="#" id="stopTracking" style="color: #0b8be3">disable tracking</a>.', 
     optedOutText: 'Tracking for this website has been disabled in this browser.', 
     backgroundgColor: '#000000', 
     fontColor: '#ffffff', 
@@ -23,14 +22,17 @@
   <body>
     <p>Test page for display</p>
     
-    <script type="text/javascript"> 
+  <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js" > </script> 
+<script type="text/javascript" src="https://analytics-eu.clickdimensions.com/optout.js" > </script> 
+
+<script type="text/javascript"> 
   var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com'); 
   cdAnalytics.setAccountKey('acP8vbk7mnUmxgTBl7vCkE'); 
   cdAnalytics.setDomain('cmcarriger.github.io'); 
   cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore)); 
   var optOutHostId = 'cmcarrigergithubio_EkCv7lBTgxmUnm7kbv8Pca'; 
   cdAnalytics.optOutTracking(true); 
-</script>
+</script> 
     
  
     
