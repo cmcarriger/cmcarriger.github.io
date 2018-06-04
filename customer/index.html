@@ -3,35 +3,31 @@
   
   <body>
     Form Capture test for 133388
-    <form id="NewFormCaptureTest" name="NewFormCaptureTest" action="https://analytics-eu.clickdimensions.com/forms/h/af4LuFLcBp0yJYtkt2HYAg" method="post" target="_blank">
+    <form action="http://analytics.clickdimensions.com/forms/h/aWrgH7Q9SxUqFJ2zqhRybQ" method="post" target="_blank">
 
         <div>
-            <label for="First Name">First Name</label>   
-            <input id="textFirstName"  name="textFirstName" />
+            <label>First Name</label>   
+            <input type="text" name="First Name" />
+        </div>
+       
+        <div>
+            <label>E-mail Address</label>   
+            <input name="Email" type="email" />
         </div>
         <div>
-            <label for="Last Name">Last Name</label>   
-            <input id="textLastName" name="textLastName" />
-        </div>
-        <div>
-            <label for="E-mail Address">E-mail Address</label>   
-            <input id="emEmailPrivate" name="emEmailPrivate" />
-        </div>
-        <div>
-            <label>&nbsp;</label>
             <input type="submit" value="Submit" class="submit" />
           </div>
     </form>
 
-        <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js" > </script> 
+        <script type="text/javascript" src="https://analytics.clickdimensions.com/ts.js" > </script> 
 
- <script type="text/javascript"> 
-     var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com');
-     cdAnalytics.setAccountKey('a5QMih9A1ku9oGm1c29ajA');
-     cdAnalytics.setDomain('nyenrodeformcapture.azurewebsites.net');
-     cdAnalytics.setScore(typeof (cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore));
-     cdAnalytics.trackPage();
- </script> 
+<script type="text/javascript"> 
+  var cdAnalytics = new clickdimensions.Analytics('analytics.clickdimensions.com'); 
+  cdAnalytics.setAccountKey('aSVMoO1Dyg004xubvyloUA'); 
+  cdAnalytics.setDomain('cmcarriger.github.io'); 
+  cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore)); 
+  cdAnalytics.trackPage(); 
+</script> 
 </body>
 
 </html>
